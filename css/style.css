@@ -1,0 +1,599 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Gentium Book Basic";
+    src: url(../fonts/GenBkBasB.ttf);
+}
+
+.flex_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.center {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+header {
+    background-image: url(../img/bg.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    h1 {
+        opacity: 0.922;
+        padding-top: 80px;
+        margin: 0 auto;
+        font-size: 90px;
+        width: 970px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Yeseva One";
+        text-align: center;
+        filter: drop-shadow(0.469px 0.883px 1px rgba(1, 1, 1, 0.64));
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        padding-top: 30px;
+
+        li {
+            padding: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 21px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Gentium Book Basic";
+        }
+    }
+
+    .tcenter {
+        text-align: center;
+
+        img {
+            width: 200px;
+        }
+
+        .dark {
+            padding: 10px 30px 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            width: 207px;
+            height: 49px;
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Lato";
+            text-align: center;
+        }
+
+        .light {
+            padding: 10px 30px 10px;
+            background-color: rgba(255, 255, 255, 0.2784313725490196);
+            border: none;
+            width: 207px;
+            height: 49px;
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Lato";
+            text-align: center;
+        }
+
+        .dark,
+        .light {
+            margin: 30px 15px;
+        }
+    }
+
+}
+
+#about {
+    background-image: url(../img/bg2.png);
+    padding: 70px 0 50px;
+
+    .left {
+        text-align: center;
+
+        h2 {
+            font-size: 36px;
+            line-height: 24px;
+            color: #cc9900;
+            font-weight: 400;
+            font-family: "Yeseva One";
+            padding-bottom: 20px;
+        }
+
+        p {
+
+            padding-top: 30px;
+            width: 413px;
+            height: 130px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #4c4c4c;
+            font-weight: 400;
+            font-family: "Lato";
+            margin: 0 auto;
+        }
+
+        .cook {
+            margin-left: 80px;
+            margin-top: 40px;
+        }
+    }
+
+    .right {
+        width: 50%;
+
+        .plate {
+            width: 100%;
+        }
+    }
+
+}
+
+#ingridients {
+    background-image: url(../img/bg3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+
+    .flex_container {
+        justify-content: end;
+
+        .dark {
+            opacity: 0.671;
+            max-width: 570px;
+            background-color: #000000;
+            padding: 70px 27px;
+            text-align: center;
+
+            h3 {
+                font-size: 36px;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Yeseva One";
+                text-align: center;
+            }
+
+            .long {
+                padding-top: 15px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Lato";
+                text-align: center;
+                padding-top: 25px;
+                padding-bottom: 70px;
+            }
+
+            img {
+                margin-left: 20px;
+
+            }
+        }
+
+    }
+
+}
+
+#menu {
+    background-image: url(../img/bg4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+
+    .block {
+        text-align: center;
+        width: 45%;
+
+        h3 {
+            font-size: 36px;
+            line-height: 24px;
+            color: #cc9900;
+            font-weight: 400;
+            font-family: "Yeseva One";
+            padding-top: 20px;
+        }
+
+        img {
+            padding-top: 25px;
+        }
+
+        .brd {
+            border: #c89f2d 1px solid;
+            padding: 10px 0;
+        }
+
+        .menu_item {
+            margin: 40px 50px;
+            position: relative;
+
+            .special {
+                background-color: #c89f2d;
+                color: white;
+                padding: 5px 10px;
+                position: absolute;
+                top: -29px;
+                right: 0;
+            }
+
+            .flex_container {
+                border-bottom: solid 1px #c89f2d;
+                padding: 0 0 10px;
+
+                span {
+                    font-size: 21px;
+                    line-height: 24px;
+                    color: #c89f2d;
+                    font-weight: 400;
+                    font-family: "Yeseva One";
+                }
+            }
+
+            p {
+                margin-top: 15px;
+                font-size: 17px;
+                color: black;
+                font-weight: 400;
+                font-family: "Lato";
+                text-align: left;
+            }
+        }
+    }
+
+}
+
+#review {
+    background-image: url(../img/bg5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+
+    .flex_container {
+        justify-content: center;
+
+        .dark {
+            background-color: rgba(0, 0, 0, 0.689);
+            padding: 70px 40px 100px;
+            text-align: center;
+            width: 750px;
+
+            h2 {
+                font-size: 36px;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Yeseva One";
+            }
+
+            img {
+                text-align: center;
+                padding-top: 20px;
+            }
+
+            .p1 {
+                font-size: 25px;
+                line-height: 45px;
+                color: #dde0df;
+                font-weight: 500;
+                font-family: "Gentium Book Basic";
+                padding: 20px 14px;
+            }
+
+            .p2 {
+                font-size: 25px;
+                line-height: 45px;
+                color: #dde0df;
+                font-weight: 500;
+                font-family: "Gentium Book Basic";
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+#reservation {
+    background-image: url(../img/bg6.png);
+    padding: 90px 0;
+
+    .flex_container {
+        .left {
+            width: 50%;
+
+            img {
+                width: 40%;
+            }
+
+            .first {
+                margin-right: 20px;
+            }
+        }
+
+        .right {
+            width: 50%;
+            text-align: center;
+
+            h2 {
+
+                font-size: 36px;
+                line-height: 24px;
+                color: #cc9900;
+                font-weight: 400;
+                font-family: "Yeseva One";
+
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                color: #4c4c4c;
+                font-weight: 400;
+                font-family: "Lato";
+            }
+
+            img {
+                margin-top: 20px;
+            }
+
+            .p1 {
+                padding-top: 20px;
+            }
+
+            .p2 {
+                padding-top: 10px;
+            }
+
+            form {
+                padding-top: 40px;
+
+            }
+
+            .block {
+                label {
+                    font-size: 14px;
+                    color: #c9a131;
+                    font-weight: 700;
+                    font-family: "Open Sans";
+                    display: block;
+                    text-align: left;
+                    padding: 10px 0;
+                }
+
+                input {
+                    width: 200px;
+                    padding: 5px;
+                }
+            }
+
+            button {
+                background-color: orange;
+                padding: 10px 60px;
+                color: white;
+                border: transparent;
+                font-size: 16px;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Open Sans";
+                text-align: center;
+                margin: 35px auto 0;
+
+            }
+
+
+        }
+    }
+}
+
+footer {
+    background-color: #000000;
+
+    .block {
+        width: 30%;
+        margin-top: 50px;
+        text-align: center;
+
+        h2 {
+            font-size: 21px;
+            line-height: 24px;
+            color: #fefefe;
+            font-weight: 400;
+            font-family: "Yeseva One";
+        }
+        .div{
+            margin: 20px;
+        }
+         p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #ffffff;
+            font-weight: 400;
+            font-family: "Open Sans";
+            padding: 0 10px 0;
+        }
+
+        .footer_img {
+            margin-top: 40px;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+/* @media--------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1100px) {
+
+    #menu .center>.flex_container,
+    #reservation .center>.flex_container {
+        flex-direction: column;
+    }
+
+    #menu .block {
+        width: 100%;
+    }
+
+    #reservation {
+        & .flex_container {
+            .right {
+                h2 {
+                    font-size: 25px;
+                    margin-top: 20px;
+                }
+            }
+
+            .right,
+            .left {
+                width: 100%;
+            }
+        }
+
+        form {
+            .flex_container {
+                justify-content: center;
+            }
+        }
+    }
+    footer{
+        .flex_container{
+            flex-direction: column;
+            .block{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1030px) {
+    header {
+        height: auto;
+
+        h1 {
+            width: 100%;
+        }
+    }
+
+    #about {
+        .flex_container {
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #ingridients {
+        .flex_container {
+            .dark {
+                padding: 20px;
+
+                p {
+                    padding: 10px 0;
+                }
+
+                img {
+                    margin-left: 5px;
+                    width: 20%;
+                }
+            }
+        }
+    }
+
+    #review {
+        padding: 20px 0;
+
+        .flex_container {
+            .dark {
+                padding: 20px 0;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    header {
+        .list {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social_icons {
+
+            justify-content: center;
+        }
+
+        .flex_container {
+            flex-direction: column;
+
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+    #about {
+        & .left {
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        .right {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+    #ingridients {
+        .flex_container {
+            .dark {
+                img {
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
